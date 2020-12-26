@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="./functions.js"></script>
+    <meta
+        content="Questions about Barndominiums? Prices? Floor plans? Builders? General information? Photos, videos, interviews. If the topic is Barndominiums, we probably have the answer. Stop by today!">
+    <title>Barndominium Life</title>
+</head>
+
+<body id="whole_page" style="display: none;">
+    <div class="container mx-auto">
+        <nav class="nav flex flex-row">
+            <div class="flex">
+                <img src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/logo-final.png"
+                    alt="main logo">
+                <img class="mobile-burger m-auto" style="display: none;"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/bars-solid.svg"
+                    alt="hamburger">
+                <ul class="mobile-menu rounded shadow fade-in">
+                    <li>
+                        <p><a rel="noopener" href="https://www.barndominiumlife.com/">HOME</a></p>
+                    </li>
+
+                    <li>
+                        <p><a rel="noopener" href="https://www.barndominiumlife.com/floor-plans/">FLOOR PLANS</a></p>
+                    </li>
+
+                    <li>
+                        <p><a rel="noopener"
+                                href="https://www.barndominiumlife.com/barndominium-builders-directory/">BUILDERS &
+                                KIT PROVIDERS</a></p>
+                    </li>
+                    <li>
+                        <p><a rel="noopener" href="https://mailchi.mp/144be7f12033/barndo-ebook">EBOOK</a></p>
+                    </li>
+                    <li>
+                        <p><a rel="noopener" href="https://www.barndominiumlife.com/about/">ABOUT US</a></p>
+                    </li>
+                    <li>
+                        <p><a rel="noopener" href="https://www.barndominiumlife.com/contact/">CONTACT</a></p>
+                    </li>
+                    <li>
+                        <p><a rel="noopener" href="https://www.barndominiumlife.com/privacy-policy/">PRIVACY POLICY</a>
+                        </p>
+                    </li>
+                    <li>
+                        <button id="searchBtn" onclick="showSearch()">SEARCH</button>
+                    </li>
+                </ul>
+            </div>
+
+            <a rel="noopener" href="https://www.barndominiumlife.com/">HOME</a>
+            <div style="position: relative;">
+                <button class="flex">
+                    <p>FLOOR PLANS</p>
+                    <img class="down-icon"
+                        src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/chevron-down-solid.svg"
+                        alt="down arrow">
+                </button>
+
+                <ul class="dropdown-menu shadow rounded fade-in">
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/barndominium-floor-plans-with-garage/">Floor Plans
+                            with Garage</a></li>
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/open-concept-barndominium-floor-plans/">Open Concept
+                            Floor Plans</a></li>
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/barndominium-floor-plans-with-loft/">Floor Plans with
+                            Loft</a></li>
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/barndominium-floor-plans-with-shop/">FLoor Plans with
+                            Shop</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/barndominium-floor-plans/">Best Floor
+                            Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/small-barndominiums/">Small Barndo
+                            Floor Plans</a></li>
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/barndominium-floor-plans-with-2-master-suites/">Floor
+                            Plans with 2 Master Suits</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/texas-barndominium-floor-plans/">Texas
+                            Barndominium Floor Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/2-bedroom-barndominium-floor-plans/">2
+                            Bedroom Floor Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/3-bedroom-barndominium-floor-plans/">3
+                            Bedroom Floor Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/4-bedroom-barndominium-floor-plans/">4
+                            Bedroom Floor Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/5-bedroom-barndominium-floor-plans/">5
+                            Bedroom Floor Plans</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/6-bedroom-barndominium-floor-plans/">6
+                            Bedroom Floor Plans</a></li>
+                </ul>
+            </div>
+
+            <div style="position: relative;">
+                <button class="flex">
+                    <p>BUILDERS & KIT PROVIDERS</p>
+                    <img class="down-icon"
+                        src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/chevron-down-solid.svg"
+                        alt="down arrow">
+                </button>
+                <ul class="dropdown-menu shadow rounded fade-in">
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/barndominium-builders-directory/">Barndominium
+                            Builders by State</a></li>
+                    <li><a rel="noopener" href="https://www.barndominiumlife.com/barndominium/vendors/kit-provider/">Kit
+                            Providers</a></li>
+                    <li><a rel="noopener"
+                            href="https://www.barndominiumlife.com/post-listing/?listing_type=gd_barndominium">Add
+                            Listing</a></li>
+                </ul>
+            </div>
+
+            <p><a rel="noopener" href="https://mailchi.mp/144be7f12033/barndo-ebook">EBOOK</a></p>
+            <p><a rel="noopener" href="https://www.barndominiumlife.com/about/">ABOUT US</a></p>
+            <p><a rel="noopener" href="https://www.barndominiumlife.com/contact/">CONTACT</a></p>
+            <p><a rel="noopener" href="https://www.barndominiumlife.com/privacy-policy/">PRIVACY POLICY</a></p>
+            <button id="searchBtn" onclick="showSearch()"><img class="search-icon"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/search-solid.svg"
+                    alt="search"></button>
+        </nav>
+    </div>
+
+    <div class="title-section">
+        <div class="container mx-auto flex m-col">
+            <div class="title title-padding w-full ">
+                <div class="intro-container">
+                    <h1>What is a Barndominium? The Ultimate Guide to Building, Costs, and Everything You Need To Know
+                    </h1>
+                    <div class="btn-div">
+                        <a rel="noopener" class="btn" href="https://www.barndominiumlife.com/what-is-a-barndominium/"
+                            target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barn-image w-full">
+                <img class="mobile-img"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/1ST SECTION IMAGE.png"
+                    alt="barn image" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div class="section directory-section">
+        <div class="container mx-auto flex m-col-r">
+            <div class="directory-image w-full">
+                <img class="mobile-img"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/5TH SECTION IMAGE.png"
+                    alt="lake image" style="display: none;">
+            </div>
+
+            <div class="title w-full ">
+                <div class="directory-container">
+                    <div class="text-div">
+                        <h1>Barndominium Builders Directory
+                        </h1>
+                        <p>
+                            Looking for a barndominium builder company in your area? We've compiled the most thorough
+                            list of barndominium builders out there. Come find the builder for the barndominium of your
+                            dreams
+                        </p>
+                        <div class="btn-div">
+                            <a rel="noopener" class="btn"
+                                href="https://www.barndominiumlife.com/barndominium-builders-directory/"
+                                target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container mx-auto flex m-col">
+            <div class="title w-full ">
+                <div class="ebook-container">
+                    <div class="text-div">
+                        <h1>Now Available as Paperback as Well
+                        </h1>
+                        <h2>Build Your Dream Barndominium Book</h2>
+                        <p>
+                            You deserve to quicken the process of building your dream barndominium. Take the first step
+                            to live the life of your dreams. Now available as both eBook and paperback
+                        </p>
+                        <div class="btn-div">
+                            <a rel="noopener" class="btn"
+                                href="https://www.amazon.com/Build-Your-Dream-Barndominium-Concept/dp/B08NVHXLZM/ref=sr_1_1?crid=1R444NVKN3K29&dchild=1&keywords=build+your+dream+barndominium&qid=1607981189&sprefix=build+your+dream+b%2Caps%2C357&sr=8-1"
+                                target="_blank">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ebook-image w-full">
+                <img class="mobile-img mx-auto"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/3RD SECTION IMAGE.png"
+                    alt="ebook image" style="display: none;">
+            </div>
+        </div>
+    </div>
+
+    <div class="barndos-section">
+        <div class="container mx-auto">
+            <div>
+                <h1>Featured Barndominiums</h1>
+            </div>
+
+            <div class="barndos-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/cottondale-barndominium/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid1.jpg"
+                            alt="cottondale">
+                        <p>Amazing Barndominium in Cottondale, Texas – Below 2000 Square Feet and Affordable</p>
+                    </a>
+                </div>
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/barndominium-with-loft-shop-garage/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid2.jpg"
+                            alt="garage">
+                        <p>Amazing Barndominium With Loft and Massive Shop/Garage Area – Over 20 Pictures</p>
+                    </a>
+                </div>
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/oklahoma-barndominium/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid3.jpg"
+                            alt="oklahoma">
+                        <p>Amazing Oklahoma Barndominium – Pictures, Builder Info, Cost, and More</p>
+                    </a>
+                </div>
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/tennessee-barndominium-40x60/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid4.jpg"
+                            alt="tennessee">
+                        <p>40×60 Tennessee Barndominium: Deciding Your Best Paint Colors</p>
+                    </a>
+                </div>
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/springtown-texas-barndominium/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid5.jpg"
+                            alt="texas">
+                        <p>Springtown Texas Barndominium – Built by HL Custom Homes for The Cantwell Family</p>
+                    </a>
+                </div>
+                <div><a rel="noopener" href="https://www.barndominiumlife.com/boyd-texas-barndominium/"
+                        target="_blank"><img
+                            src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/grid6.jpg"
+                            alt="boyd-texas">
+                        <p>Boyd Texas Barndominium: 2400 Sq Ft Paradise Home With Shop
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="barndos-btn text-center">
+                <a rel="noopener" class="btn" href="https://www.barndominiumlife.com/floor-plans/" target="_blank">View
+                    More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="featured-section title">
+        <div class="featured-container container mx-auto">
+            <h1 class="text-center">As Featured By</h1>
+            <div class="featured-grid grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div><img
+                        src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/houstonchronicle.jpg"
+                        alt="huston"></div>
+                <div><img
+                        src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/SanAntonioExpressNews_logo.jpg"
+                        alt="SanAntonio"></div>
+                <div><img
+                        src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/sf-chronicle-logo.jpg"
+                        alt="Chronical"></div>
+                <div><img src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/handyman-logo.png"
+                        alt="Handyman"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-section">
+        <div class="container mx-auto featured-container title">
+            <h1 class="text-center">Recent Barndominium Articles</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 more-grid">
+                <div id="recent0" style="max-width: 376px;width: 100%;">
+                </div>
+
+                <div id="recent1" style="max-width: 376px;width: 100%;">
+                </div>
+
+                <div id="recent2" style="max-width: 376px;width: 100%;">
+                </div>
+            </div>
+
+            <div class=" text-center">
+                <a rel="noopener" class="btn" href="https://www.barndominiumlife.com/floor-plans/" target="_blank">View
+                    more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="ml-12">
+                    <h2>FOLLOW US</h2>
+                    <div class="flex">
+                        <a rel="noopener" href="https://www.facebook.com/groups/210357033017499" target="_blank"><img
+                                src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/facebook-f-brands.svg"
+                                alt="facebook">
+                            <a rel="noopener" href="https://www.pinterest.nz/BarndoLife/" target="_blank"><img
+                                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/pinterest-brands.svg"
+                                    alt="pintrest"></a>
+                            <a rel="noopener" href="https://www.youtube.com/channel/UC9LGt81NNwgIMnylJLkb-GQ"
+                                target="_blank"><img
+                                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/youtube-brands.svg"
+                                    alt="youtube"></a>
+                    </div>
+                </div>
+                <div class="ml-12 contact">
+                    <h2>CONTACT US</h2>
+                    <p class="admin">admin@barndominiumlife.com</p>
+                </div>
+
+                <div class="footer-bottom ml-12">
+                    <h2>INFO</h2>
+                    <div class="flex flex-col">
+                        <a rel="noopener" href="https://www.barndominiumlife.com/barndominium-builders-directory/"
+                            target="_blank">Builder Directory</a>
+                        <a rel="noopener" target="_blank"
+                            href="https://www.barndominiumlife.com/barndominium/vendors/kit-provider/">Kit Provider
+                            Directory</a>
+                        <a rel="noopener" target="_blank" href="https://mailchi.mp/144be7f12033/barndo-ebook">eBook</a>
+                        <a rel="noopener" target="_blank" href="https://www.barndominiumlife.com/contact/">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom ml-12">
+                    <h2>KEEP IN TOUCH</h2>
+
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://barndominiumlife.us19.list-manage.com/subscribe/post?u=23571fa972e3bc56b66d724e1&amp;id=a5f815fcd2"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                            class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll" class="flex email-form">
+
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                    placeholder="   Email address" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                        name="b_23571fa972e3bc56b66d724e1_a5f815fcd2" tabindex="-1" value=""></div>
+                                <div class="clear signup-button"><input type="submit" value="Subscribe" name="subscribe"
+                                        id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                        <p class="deals">Stay updates with our latest deals and offerings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright text-center">Copyright 2020 | Barndominium Life</div>
+        </div>
+    </div>
+
+    <!-- Seacrh popup -->
+
+    <div id="search-popup" class="search-popup-div">
+        <div>
+            <button onclick="hideSearch()"><img class="w-8"
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/times-solid.svg"
+                    alt="exit icon"></button>
+        </div>
+        <form id="search" onsubmit="searchPost(event)">
+            <input id="searchQuery" class="search-input rounded" type="text" placeholder="   Search">
+            <button type="submit" value="submit"><img
+                    src="https://barndominiumlife.com/wp-content/themes/x/landing-folder/images/search-solid.svg"
+                    alt="search icon"></button>
+        </form>
+    </div>
+</body>
+
+</html>

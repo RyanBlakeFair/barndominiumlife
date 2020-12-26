@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+html{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px !important;
+}
+
+nav{
+    margin-top: 26px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    display: flex;
+}
+
+nav img{
+    width: 100%;
+    max-width: 335px;
+    height: 100%;
+}
+
+.search-icon{
+    width: 100%;
+    max-width: 14px;
+}
+
+.down-icon{
+    width: 100%;
+    max-width: 12px;
+    padding-left: 2px;
+}
+
+nav button{
+    display: flex;
+    align-items: center;
+}
+
+nav button:hover + ul{
+    display: block;
+}
+
+nav li:hover{
+    background-color: #868686;
+    color: #ffffff;
+}
+
+.nav ul:hover{
+    display: block;
+}
+
+nav li a{
+    padding: 10px 10px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color: #f5f5f5;
+    width: 300px;
+    z-index: 2;
+    display: none;
+}
+
+.mobile-burger{
+    position: relative;
+}
+
+.mobile-burger:hover + ul{
+    display: block !important;
+}
+
+.mobile-menu{
+    background-color: #f5f5f5;
+    width: 300px;
+    z-index: 2;
+    width: 100vw;
+    padding: 10px 10px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.mobile-menu li{
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.title-section{
+    position: relative;
+    margin-top: 125px;
+}
+
+.barn-image::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background: url("./images/1ST\ SECTION\ IMAGE.png");
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 58px;
+    height: 100%;
+}
+
+.title-padding{
+    padding-bottom: 70px;
+}
+
+.title h1{
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: -0.96px;
+    color: #323232;
+}
+
+.title p{
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+    color: #323232;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.btn{
+    padding: 22px 62px;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.36px;
+    background-color: #2BAADF;
+    color: #ffffff;
+}
+
+.directory-section{
+    position: relative;
+    background-color: #f5f5f5 !important;
+}
+
+.section{
+    position: relative;
+    background-color: #ffffff;
+}
+
+.text-div{
+    margin: 150px 0px;
+}
+
+.text-div h2{
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.48px;
+    color: #323232;
+    padding-top: 26px;
+    font-weight: bold;
+}
+
+.directory-image::before{
+    content: "";
+    position: absolute;
+    right: 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: url("./images/5TH\ SECTION\ IMAGE.png");
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 32px;
+}
+
+.ebook-image::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 60%;
+    top: 0;
+    bottom: 0;
+    background: url("./images/3RD\ SECTION\ IMAGE.png");
+    z-index: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.btn-div{
+    padding: 75px 0px;
+}
+
+/* Barndo Grid */
+
+.barndos-section{
+    background-color: #f5f5f5;
+}
+
+.barndos-section h1{
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.96px;
+    line-height: 65px;
+    padding-top: 134px;
+}
+
+.barndos-grid{
+    padding-top: 81px;
+}
+
+.barndos-section p{
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.48px;
+    max-width: 376px;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.barndos-section img{
+    max-width: 376px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.featured-container{
+    padding: 134px 0px;
+}
+
+.featured-grid{
+    margin-top: 69px;
+}
+
+.featured-grid img{
+    margin: auto;
+    max-height: 100px;
+    height: 100%;
+}
+
+.barndos-btn{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.testimonials-section h1{
+    max-width: 798px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    letter-spacing: -0.52px;
+    margin: auto;
+}
+
+.testimonials-container{
+    padding: 133px 0px;
+}
+
+.testimonials-section img{
+    max-width: 98px;
+    width: 100%;
+    max-height: 98px;
+    height: 100%;
+    margin: 0px 27px;
+}
+
+.testimonials-section p{
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: -0.4px;
+}
+
+.testimonials-section h2{
+    size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.36px;
+    font-weight: bold;
+    margin-top: 19px;
+}
+
+.testimonials-btn{
+    text-align: center;
+    margin-top: 81px;
+}
+
+.testimonials-grid{
+    margin-top: 81px;
+}
+
+.more-section{
+    background-color: #f5f5f5;
+}
+
+.more-grid{
+    margin: 66px 0px;
+}
+
+.more-grid img{
+    margin: auto;
+}
+
+.more-grid p{
+    max-width: 376px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.footer-container{
+    padding-top: 79px;
+    padding-bottom: 15px;
+}
+
+.footer h2{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.footer img{
+    max-height: 33px;
+    height: 100%;
+    max-width: 33px;
+    width: 100%;
+}
+
+.footer a{
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.footer-bottom{
+    margin-top: 86px;
+}
+
+.admin{
+    margin-top: 7px;
+    font-size: 24px;
+    line-height: 42px;
+    letter-spacing: -0.48px;
+}
+
+.email-form{
+    max-width: 493px;
+    width: 100%;
+    border: 2px solid #707070;
+    height: 55px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.footer-bottom .signup-button{
+    max-height: 55px;
+    height: 100%;
+    max-width: 144px;
+    width: 100%;
+    background: #2BAADF 0% 0% no-repeat padding-box;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+input[type="submit" i] {
+    background: #2BAADF 0% 0% no-repeat padding-box !important;
+}
+
+.footer-bottom input{
+    flex-grow: 1;
+}
+
+.footer-bottom .button{
+    margin: 8px 0px;
+    cursor: pointer;
+}
+
+.deals{
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 42px;
+    letter-spacing: -0.32px;
+}
+
+.copyright{
+    margin-top: 72px;
+}
+
+.search-popup-div{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 3;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.search-popup-div > div{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.search-popup-div form{
+    display: flex;
+}
+
+.search-popup-div form button{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.search-input{
+    width: 250px;
+    height: 75px;
+    border: #000 2px solid;
+    padding: 0px 10px
+}
+
+#mc_embed_signup input.email {
+    border: unset !important;
+    height: 51px !important;
+}
+
+#mc_embed_signup .button {
+    background-color: #2BAADF !important;
+    height: 51px !important;
+}
+
+@media(max-width: 768px){
+    .mobile-img{
+        display: block !important;
+    }
+
+    .barn-image::after{
+        background-image: none;
+    }
+
+    .directory-image::before{
+        background-image: none;
+    }
+
+    .ebook-image::after{
+        background-image: none;
+    }
+
+    .m-col{
+        flex-direction: column;
+    }
+
+    .m-col-r{
+        flex-direction: column-reverse;
+    }
+
+    .title h1{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .barndos-section h1{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .title-section{
+        margin-top: 40px;
+    }
+
+    .btn-div{
+        text-align: center;
+        padding: 50px 0px;
+    }
+
+    .intro-container{
+        padding: 0px 10px;
+    }
+
+    .directory-container{
+        padding: 0px 10px
+    }
+
+    .ebook-container{
+        padding: 0px 10px;
+    }
+
+    .barndos-section{
+        padding: 0px 10px;
+    }
+
+    .more-section{
+        padding: 0px 10px;
+    }
+
+    .footer-bottom{
+        margin-left: unset !important;
+        margin-top: 50px;
+    }
+
+    .footer-container .grid > div{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 0px 10px;
+    }
+
+    .footer img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer h2{
+        text-align: center;
+    }
+
+    .contact{
+        margin-top: 50px;
+    }
+
+    .deals{
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .footer-bottom a{
+        margin-right: unset;
+        text-align: center;
+    }
+
+    .footer-bottom .button{
+        font-size: 16px;
+        padding: 0px 8px;
+    }
+}
+
+@media (max-width: 1280px){
+    .nav a{
+        display: none;
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .mobile-burger{
+        max-width: 24px;
+        width: 100%;
+        margin-top: 16px;
+        display: block !important;
+    }
+
+    .nav{
+        flex-direction: column !important;
+    }
+
+    nav img {
+        width: 80%;
+        max-width: 335px;
+        margin: 0px 12px;
+    }
+
+    .mobile-menu a{
+        display: unset !important;
+    }
+
+    .mobile-menu button{
+        display: unset !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .more-grid div{
+        margin: auto;
+    }
+
+    .admin{
+        font-size: 16px;
+    }
+}
+
+/* ANIMATION */
+
+.fade-in {
+    animation: fadeIn ease .5s;
+    -webkit-animation: fadeIn ease .5s;
+    -moz-animation: fadeIn ease .5s;
+    -o-animation: fadeIn ease .5s;
+    -ms-animation: fadeIn ease .5s;
+  }
+  
+  
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
